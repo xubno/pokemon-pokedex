@@ -1,0 +1,102 @@
+.pokemon-card {
+    background: #f7f7f7;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    text-transform: capitalize;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.pokemon-card:hover {
+    transform: scale(1.05);
+}
+
+/* === Type farver efter dine ønsker === */
+
+/* Græs */
+.grass {
+    background-color: #4caf50; /* Grøn */
+}
+
+/* Vand */
+.water {
+    background-color: #2196f3; /* Blå */
+}
+
+/* Ild */
+.fire {
+    background-color: #ff5722; /* Orange */
+}
+
+/* Elektrisk */
+.electric {
+    background-color: #ffeb3b; /* Gul */
+}
+
+/* Normal */
+.normal {
+    background-color: #cfcfcf; /* Grå */
+}
+
+/* Fighting */
+.fighting {
+    background-color: #d32f2f; /* Rød */
+}
+
+/* Flyvende */
+.flying {
+    background-color: #add8e6; /* Lyseblå */
+}
+
+/* Gift */
+.poison {
+    background-color: #a020f0; /* Lilla */
+}
+
+/* Jord */
+.ground {
+    background-color: #8b4513; /* Brun */
+}
+
+/* Bug */
+.bug {
+    background-color: #8bc34a; /* Lysegrøn */
+}
+
+/* Spøgelse */
+.ghost {
+    background-color: #6a0dad; /* Mørkelilla */
+}
+
+/* Stål */
+.steel {
+    background-color: #4682b4; /* Stålblå */
+}
+
+/* Psykisk */
+.psychic {
+    background: linear-gradient(135deg, #ff0000, #ffffff); /* Rød-hvid */
+}
+
+/* Is */
+.ice {
+    background: linear-gradient(135deg, #add8e6, #ffffff); /* Blå-hvid */
+}
+
+/* Drage */
+.dragon {
+    background-color: #00008b; /* Mørkeblå */
+}
+
+/* Mørk */
+.dark {
+    background-color: #000000; /* Sort */
+    color: white; /* Så teksten er synlig på sort */
+}
+
+/* Fe */
+.fairy {
+    background-color: #f8bbd0; /* Lyserød */
+}
