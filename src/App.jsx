@@ -1,16 +1,13 @@
 import { Routes, Route } from 'react-router-dom';
-import PokemonList from './components/PokemonList';
-import Aboutpage from './pages/AboutPage';
-import DetailPage from './pages/DetailPage';
-
+import PokedexPage from './pages/PokedexPage';
+import AboutPage from './pages/AboutPage';
 
 function App() {
     return (
         <div>
             <Routes>
-                <Route path="/" element={<PokemonList />} />
-                <Route path="/about" element={<Aboutpage />} />
-                <Route path="/detail/:name" element={<DetailPage />} />
+                <Route path="/" element={<PokedexPage />} />
+                <Route path="/about/:name" element={<AboutPage />} />
             </Routes>
         </div>
     );

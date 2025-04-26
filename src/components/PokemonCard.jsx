@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './PokemonCard.css';
+import './css/PokemonCard.css';
 
 function PokemonCard({ pokemon }) {
     const primaryType = pokemon.types[0]; // Vi tager den første type
