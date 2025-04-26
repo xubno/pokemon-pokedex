@@ -33,11 +33,21 @@ function PokemonList({ pokemon, searchTerm }) {
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
             {pokemon
                 .filter((p) => p.name.toLowerCase().includes(searchTerm.toLowerCase()))
-                .map((p) => (
+                .map((p) =>{
+                const cardColor = getCardColor(p.types); // Få farven baseret på typerne
+                return(
+
                     <Link
                         key={p.name}
                         to={`/about/${p.name}`}
-                        style={{ textDecoration: 'none', color: 'black' }}
+                        style={{ textDecoration: 'none', color: 'black', backgroundColor: cardColor, // Sæt baggrundsfarve
+                            borderRadius: '10px',
+                            padding: '10px',
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            width: '150px',
+                            height: '200px',}}
                     >
                         <PokemonCard
                             pokemon={{
@@ -48,7 +58,7 @@ function PokemonList({ pokemon, searchTerm }) {
                             }}
                         />
                     </Link>
-                ))}
+                );})}
         </div>
     );
 }

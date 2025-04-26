@@ -56,6 +56,8 @@ function PokedexPage() {
                 onChange={(e) => setSearchTerm(e.target.value)}
                 style={{ marginBottom: '20px', padding: '5px', fontSize: '16px' }}
             />
+
+
             <PokemonList pokemon={pokemon} searchTerm={searchTerm} />
             <Pagination handlePrev={handlePrev} handleNext={handleNext} offset={offset} />
         </div>
