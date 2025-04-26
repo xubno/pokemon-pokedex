@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import ghPages from 'vite-plugin-gh-pages'
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
-  base: '/pokemon-pokedex/',
+  plugins: [react(), ghPages()],
+  base: '/pokemon-pokedex/', // <-- sørg for at ændre dette til dit repo-navn
 })
